@@ -1,0 +1,12 @@
+{
+  "searchloanId": "1120280661",
+  "env": "uat",
+  "user": "LMN",
+  "LMN_ORG_User": "abc@yahoo.com",
+  "LMN_LAT_User": "def@yahoo.com",
+  "Treasurer_User": "ghi@yahoo.com",
+  "LMN_Password": "jkl@123",
+  "Treasurer_Password": "mno@123",
+  "OriginatorLoanID":"GitLoan01",
+  "PropertyAddress":"01 Example StGITAddress Jersey City NJ 07310"
+}

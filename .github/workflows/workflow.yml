@@ -1,0 +1,23 @@
+name: Toorak_UI_Automation_e2e
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    
+    runs-on: [windows-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.6.0
+
+      - name: Run Playwright tests
+        run: npm run test
+      - name: Run Playwright Report
+        run: npm run report
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: toorak-ui-automation/reportsreport/
+          # retention-days: 30
